@@ -30,8 +30,8 @@
 ## Author
 Tugay İPEK- <a href="https://github.com/tugayipek1/">Github</a>
 
-[contributors-shield]: https://img.shields.io/github/contributors/tugayipek1/Java_Hexagonal_Architecture_FormElite .svg?style=for-the-badge
-[contributors-url]: https://github.com/tugayipek1/Java_Hexagonal_Architecture_FormElite /graphs/contributors
+[contributors-shield]: https://img.shields.io/github/contributors/tugayipek1/Java_Hexagonal_Architecture_FormElite.svg?style=for-the-badge
+[contributors-url]: https://github.com/tugayipek1/Java_Hexagonal_Architecture_FormElite/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/tugayipek1/Java_Hexagonal_Architecture_FormElite.svg?style=for-the-badge
 [forks-url]: https://github.com/tugayipek1/Java_Hexagonal_Architecture_FormElite /network/members
 [stars-shield]: https://img.shields.io/github/stars/tugayipek1/Java_Hexagonal_Architecture_FormElite.svg?style=for-the-badge
