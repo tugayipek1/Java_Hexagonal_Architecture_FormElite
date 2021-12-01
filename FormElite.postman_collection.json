@@ -1,0 +1,535 @@
+{
+	"info": {
+		"_postman_id": "ef7a53b2-f9c4-4a95-a3f9-cf6a26e2af60",
+		"name": "FormElite",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\":{\r\n        \"name\":\"Mustafa\",\r\n        \"email\":\"mustafa@gmail.com\",\r\n        \"accountType\":\"FREE\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/account",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/account/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"account",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/account",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/account/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"account",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": {\r\n        \"id\": 2,\r\n        \"name\": \"Mustafa\",\r\n        \"email\": \"mustafa@gmail.com\",\r\n        \"createdAt\": \"1970-11-30T08:58:58.824+00:00\",\r\n        \"accountType\": \"ULTIMATE\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/account/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"account",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bill",
+			"item": [
+				{
+					"name": "GetAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/bill",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bill"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bill\": {\r\n        \"id\": 1,\r\n        \"name\": \"Tue Nov 30 11:58:31 TRT 2021 Faturası\",\r\n        \"dueDate\": \"2021-12-30T08:58:31.522+00:00\",\r\n        \"price\": 10,\r\n        \"createdAt\": \"2021-11-30T08:58:31.522+00:00\",\r\n        \"account\": {\r\n            \"id\": 1,\r\n            \"name\": \"Fatma\",\r\n            \"email\": \"fatmakocak@outlook.com.tr\",\r\n            \"createdAt\": \"2021-11-30T08:58:31.393+00:00\",\r\n            \"accountType\": \"PRO\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/bill/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bill",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/bill/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bill",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List-By-Account",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/bill/list-by-account",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bill",
+								"list-by-account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/bill/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bill",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Form",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"form\": {\r\n        \"name\": \"NEWFORM\",\r\n        \"account\": {\r\n            \"id\": 3\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/form",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"form"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"form\": {\r\n        \"id\": 1,\r\n        \"name\": \"YENİFORM\",\r\n        \"account\": {\r\n            \"id\": 1,\r\n            \"name\": \"Fatma\",\r\n            \"email\": \"fatmakocak@outlook.com.tr\",\r\n            \"createdAt\": \"2021-11-30T08:58:31.393+00:00\",\r\n            \"accountType\": \"PRO\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/form",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"form"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/form/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"form",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateFormSubmit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n        {\r\n            \"konu\":\"halısaha\",\r\n            \"mesaj\":\"geliyomu\"\r\n        }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/form/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"form",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindFormAndFormSubmitById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/form/1/submit",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"form",
+								"1",
+								"submit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/form/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"form",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListByAccount",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"account\": {\r\n        \"id\": 3\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/form/list-by-account",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"form",
+								"list-by-account"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Journal",
+			"item": [
+				{
+					"name": "GetAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id\": 1,\r\n        \"name\": \"Thu Nov 25 16:13:30 TRT 2021 Bülteni \",\r\n        \"account\": {\r\n            \"id\": 1,\r\n            \"name\": \"kenan\",\r\n            \"email\": \"kenansarigul97@gmail.com\",\r\n            \"createdAt\": \"2021-10-26T11:10:41.568+00:00\",\r\n            \"accountType\": \"PRO\"\r\n        },\r\n        \"createDate\": \"2021-11-25T13:13:30.202+00:00\",\r\n        \"formCount\": 0\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/journal/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"journal",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/journal/199",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"journal",
+								"199"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/journal/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"journal",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"journal\": {\r\n        \"id\": 1,\r\n        \"name\": \"Thu Nov 25 16:13:30 TRT 2021 GÜN SONU \",\r\n        \"account\": {\r\n            \"id\": 1,\r\n            \"name\": \"tugay\",\r\n            \"email\": \"deneme.tugay@deneme.com\",\r\n            \"createdAt\": \"2021-11-29T06:58:45.308+00:00\",\r\n            \"accountType\": \"FREE\"\r\n        },\r\n        \"createDate\": \"2021-11-29T07:00:00.106+00:00\",\r\n        \"formCount\": 0\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/journal/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"journal",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
