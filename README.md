@@ -11,7 +11,7 @@
   <h2 align="center">Java_Hexagonal_Architecture_FormElite</h2>
   <p align="center">
     Domain: <a href="https://github.com/tugayipek1/Java_Hexagonal_Architecture_FormElite/tree/main/domain">Domain</a>
-    Infrastructure : <a href="https://github.com/tugayipek1/Java_Hexagonal_Architecture_FormElite/tree/main/infrastructure">Infrastructure</a>
+    Infrastructure : <a href="https://github.com/tugayipek1/Java_Hexagonal_Architecture_FormElite/tree/main/infra">Infrastructure</a>
     <br />
     <br />
     <a href="https://github.com/tugayipek1/Java_Hexagonal_Architecture_FormElite/issues">Report Bug</a>
